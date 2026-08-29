@@ -388,8 +388,8 @@ public class BrokerPolicyInspectorTests
         yield return [WithMutation(
             response => response.Policy.Rules[0].Match.Operations =
                 [PolicyOperation.Install, PolicyOperation.Install])];
-        yield return [WithMutation(
-            response => response.Policy.Rules[0].Constraints!.AllowedCustomParameters = [""])];
+        yield return [WithWireMutation(
+            root => FirstRule(root)["Constraints"]!["AllowedCustomParameters"]!.AsArray().Add(""))];
     }
 
     private static string WithMutation(Action<PolicyResponse> mutation)
