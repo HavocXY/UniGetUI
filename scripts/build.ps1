@@ -70,7 +70,7 @@ Write-Host "Building UniGetUI version: $PackageVersion"
 # --- Test ---
 if (-not $SkipTests) {
     Write-Host "`n=== Running tests ===" -ForegroundColor Cyan
-    dotnet test $WindowsSolution --verbosity q --nologo --ignore-failed-sources /p:Platform=$Platform
+    dotnet test $WindowsSolution --verbosity q --nologo /p:Platform=$Platform
     if ($LASTEXITCODE -ne 0) {
         throw "Tests failed with exit code $LASTEXITCODE"
     }
@@ -161,7 +161,7 @@ if (-not $SkipInstaller) {
             Set-Content $IssPath $IssContent -NoNewline
         }
     } else {
-        Write-Warning "Inno Setup 6 (ISCC.exe) not found — skipping installer build."
+        Write-Warning "Inno Setup 6 (ISCC.exe) not found - skipping installer build."
     }
 }
 
