@@ -586,7 +586,9 @@
                                                                       HorizontalAlignment="Right"
                                                                       VerticalAlignment="Bottom"/>
                                                 </Panel>
-                                                <TextBlock Text="{Binding Package.Name}" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Package.Name}" VerticalAlignment="Center"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding Package.Name}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
@@ -599,7 +601,9 @@
                                             <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center" Margin="4,0">
                                                 <controls:SvgIcon Path="avares://UniGetUI/Assets/Symbols/id.svg"
                                                                   Width="24" Height="24" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding Package.Id}" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Package.Id}" VerticalAlignment="Center"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding Package.Id}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
@@ -612,7 +616,9 @@
                                             <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center" Margin="4,0">
                                                 <controls:SvgIcon Path="avares://UniGetUI/Assets/Symbols/version.svg"
                                                                   Width="24" Height="24" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding VersionComboString}" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding VersionComboString}" VerticalAlignment="Center"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding VersionComboString}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
@@ -632,7 +638,9 @@
                                                                   Foreground="#F59E0B"
                                                                   IsVisible="{Binding InstallerHostChanged}"
                                                                   ToolTip.Tip="{Binding InstallerHostChangeTooltip}"/>
-                                                <TextBlock Text="{Binding Package.NewVersionString}" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Package.NewVersionString}" VerticalAlignment="Center"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding Package.NewVersionString}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
@@ -645,7 +653,9 @@
                                             <StackPanel Orientation="Horizontal" Spacing="6" VerticalAlignment="Center" Margin="4,0">
                                                 <controls:SvgIcon Path="{Binding SourceIconPath}"
                                                                   Width="24" Height="24" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding Package.Source.AsString_DisplayName}" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Package.Source.AsString_DisplayName}" VerticalAlignment="Center"
+                                                           TextTrimming="CharacterEllipsis"
+                                                           ToolTip.Tip="{Binding Package.Source.AsString_DisplayName}"/>
                                             </StackPanel>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
