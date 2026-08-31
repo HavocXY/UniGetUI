@@ -126,7 +126,7 @@
   "Abort update if pre-update command fails": "Aktualisierung abbrechen, wenn der Voraktualisierungsbefehl fehlschlägt",
   "Pre-uninstall command:": "Befehl vor der Deinstallation:",
   "Post-uninstall command:": "Befehl nach der Deinstallation:",
-  "Abort uninstall if pre-uninstall command fails": "Deinstallation abbrechen, wenn der Vorinstallationsbefehl fehlschlägt",
+  "Abort uninstall if pre-uninstall command fails": "Deinstallation abbrechen, wenn der Vordeinstallationsbefehl fehlschlägt",
   "Command-line to run:": "Auszuführende Befehlszeile:",
   "Save and close": "Speichern und schließen",
   "General": "Allgemein",
